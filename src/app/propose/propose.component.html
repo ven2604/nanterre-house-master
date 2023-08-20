@@ -1,0 +1,245 @@
+<section>
+    <p class="font-semibold text-2xl">Ce que propose ce logement</p>
+    <p class="mt-5">Vue sur la cour</p>
+    <p class="mt-5">Vue sur le jardin</p>
+    <p class="mt-5">Cuisine</p>
+    <p class="mt-5">Wifi</p>
+    <p class="mt-5">Expace de travail dédié</p>
+    <button class="py-5 border-solid border-black border w-full mr-5 mt-5 rounded-lg font-semibold" (click)="openPopUp()">Afficher les 55 équipements</button>
+</section>
+
+<!--Pop Up Propose-->
+
+<div class="fixed inset-0 bg-white transition-transform duration-500 overflow-y-auto scrollbar-hidden" [ngClass]="{'translate-y-0': isPopUpOpen, 'translate-y-full': !isPopUpOpen}" [style.zIndex]="isPopUpOpen ? 10 : -1">
+    <section class="w-full sticky top-0 left-0 bg-white p-5">
+        <i class="fas fa-chevron-left text-black-700 text-xl" (click)="closePopUp()"></i>
+    </section>
+
+    <div class="px-5">
+        <p class="font-bold text-2xl">Ce que propose ce logement</p>
+
+        <section>
+            <p class="mt-5 font-semibold text-xl">Vues panoramiques</p>
+            <div class="mt-5 py-5 border-b-2 ">
+                <p>Vue sur la cour</p>
+            </div>
+            <div class="py-5 border-b-2 ">
+                <p>Vue sur le jardin</p>
+            </div>
+        </section>
+
+        <section>
+            <p class="mt-10 font-semibold text-xl">Salle de bain</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Sèche-cheveux</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Produits de nettoyage</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Shampooing</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Eau chaude</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Gel douche</p>
+            </div>
+        </section>
+
+        <section>
+            <p class="mt-10 font-semibold text-xl">Chambre et linge</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Lave-linge</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Sèche-linge (Gratuit) dans le logement</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Équipements de base</p>
+                <p class="text-sm text-gray-400">Serviettes, draps, savon et papier toilette</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Cintres</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Draps</p>
+                <p class="text-sm text-gray-400">Linge de lit en coton</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Oreillers et couvertures supplémentaires</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Stores</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Fer à repasser</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Étendoir à linge</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Espace de rangement pour les vêtements : dressing, armoire et commode</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Divertissement</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Télévision</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Famille</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Lit pour bébé : toujours dans le logement</p>
+                <p class="text-sm text-gray-400">Standard (1,3 m de long sur 70 cm de large), draps fournis</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Livres et jouets pour enfants de Jusqu'à 2 ans et Entre 2 et 5 ans</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Chaise haute de type siège de table : toujours dans le logement</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Baignoire pour bébés : toujours dans le logement</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Vaisselle pour enfants</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Jeux de société</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Chauffage et climatisation</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Cheminée ou poêle (intérieur) : à bois</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Ventilateurs portables</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Chauffage central</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Sécurité à la maison</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Caméras de surveillance extérieure et/ou dans les espaces communs</p>
+                <p class="text-sm text-gray-400">Nous avons deux caméras à l'extérieur de la maison. L'un est au-dessus de la porte d'entrée. L'un est dans la cour.</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Détecteur de fumée</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Détecteur de monoxyde de carbone</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Internet et bureau</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Wifi</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Espace de travail dédié</p>
+                <p class="text-sm text-gray-400">Dans un espace commun</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Cuisine et salle à manger</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Cuisine</p>
+                <p class="text-sm text-gray-400">Espace où les voyageurs peuvent cuisiner</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Réfrigérateur</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Four à micro-ondes</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Vaisselle et couverts</p>
+                <p class="text-sm text-gray-400">Bols, baguettes, assiettes, tasses, etc.</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Congélateur</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Lave-vaisselle</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Four en acier inoxydable</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Bouilloire électrique</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Cafetière : cafetière à piston</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Plaques de cuisson</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Blender</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Ustensiles de barbecue</p>
+                <p class="text-sm text-gray-400">Barbecue, charbon, brochettes en bambou ou en métal, etc.</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Table à manger</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Extérieur</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Patio ou balcon : privé(e)</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Arrière-cour privée – Clôture intégrale</p>
+                <p class="text-sm text-gray-400">Un espace ouvert du logement généralement recouvert d'herbe</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Mobilier d'extérieur</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Espace repas en plein air</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Barbecue</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Parking et installations</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Stationnement gratuit dans un garage sur place : 3 places</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Services</p>
+            <div class="mt-5 py-5 border-b-2">
+                <p>Dépôt de bagages autorisé</p>
+                <p class="text-sm text-gray-400">Pour le confort des voyageurs en cas d'arrivée anticipée ou de départ tardif</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Séjours longue durée autorisés</p>
+                <p class="text-sm text-gray-400">Séjours de 28 jours ou plus autorisés</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Arrivée autonome</p>
+            </div>
+            <div class="py-5 border-b-2">
+                <p>Boîte à clé sécurisée</p>
+            </div>
+        </section>
+        <section>
+            <p class="mt-10 font-semibold text-xl">Non inclus</p>
+            <div class="mt-5 py-5 border-b-2 line-through">
+                <p>Climatisation</p>
+            </div>
+            <div class="py-5 border-b-2 line-through">
+                <p>Entrée privée</p>
+            </div>
+        </section>
+    </div>
+</div>
